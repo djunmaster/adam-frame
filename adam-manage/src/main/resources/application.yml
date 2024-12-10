@@ -1,0 +1,70 @@
+# 定义了服务器的启动端口号
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    # 数据库的用户名，用于连接数据库
+    username: root
+    # 数据库的密码，用于连接数据库
+    password: 12345
+    # 数据库驱动类的全限定名 MySQL 使用的是 com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库连接字符串，主要组成部分如下：
+    #localhost: 数据库主机地址，本地服务器。
+    #3306: 数据库端口。
+    #adamdb: 数据库名称。
+    #useUnicode=true: 启用 Unicode 支持。
+    #characterEncoding=UTF-8: 使用 UTF-8 编码以支持多语言字符集。
+    #serverTimezone=UTC: 设置服务器时区为 UTC，避免时区不匹配问题。
+    url: jdbc:mysql://localhost:3306/adamdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    # 指定使用 Druid 作为数据库连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 初始化连接池时创建的连接数量
+      initial-size: 20
+      # 连接池中保持的最小空闲连接数
+      min-idle: 20
+      # 连接池中允许的最大活跃连接数
+      max-active: 50
+      # 配置获取连接等待超时的时间，单位毫秒。如果超过等待时间，则直接抛出异常
+      max-wait: 6000
+      # Druid 提供了一个内置的监控页面，用于展示数据库连接池的运行状况，包括 SQL 执行统计、连接池状态、SQL 性能分析等
+      stat-view-servlet:
+        # 表示启用了 Druid 的监控页面功能，并设置访问路径为 /druid
+        enabled: true
+        # 指定监控页面的访问路径。例如，访问 http://localhost:8080/druid/ 可查看监控页面。
+        url-pattern: /druid/*
+        # 设置访问监控页面的登录用户名和密码
+        login-username: admin
+        login-password: 123456
+        # 启用了统计过滤器，用于记录和分析 SQL 的执行情况，并记录慢 SQL
+        filter:
+          # 启用统计过滤器，并设置慢 SQL 的阈值
+          stat:
+            # 启用统计过滤器
+            enabled: true
+            # 启用慢 SQL 日志输出功能 启用后，慢 SQL 会记录在日志中。
+            log-slow-sql: true
+            # 指定慢 SQL 的阈值，单位毫秒
+            slow-sql-millis: 2000
+            # 启用了防火墙过滤器（WallFilter），用于防止 SQL 注入和执行高危 SQL 语句
+            # 检测并拦截恶意的 SQL 语句（如 SQL 注入攻击）
+            # 检查 SQL 是否符合预设的安全规则，防止执行高危操作（如删除所有表）
+          wall:
+            enabled: true
+
+# mybatis-plus 配置
+mybatis-plus:
+  # 定义了 MyBatis Mapper XML 文件的位置
+  mapper-locations: classpath:/com/pilot/mapper/*Mapper.xml
+  # 指定实体类的包路径，MyBatis 会将该路径下的类注册为别名 例如，com.adam.frame.model.User 类在 SQL 中可以用 User 简写。
+  type-aliases-package: com.adam.frame.model
+  configuration:
+    # 启用驼峰命名规则映射。数据库字段如果是下划线风格（如 user_name），会自动映射到驼峰命名的 Java 属性（如 userName）
+    map-underscore-to-camel-case: true
+
+
+
+

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!--指定了当前POM（Project Object Model）文件遵循的版本规范-->
+    <modelVersion>4.0.0</modelVersion>
+    <!--项目所属的组织或公司：在这里com.pilot代表的是公司-->
+    <groupId>com.pilot</groupId>
+    <!--
+        项目内部的一个唯一标识符,用来区分同一组织下的不同项目
+        adam-frame可能是该组织内一个具体的框架或库的名字
+    -->
+    <artifactId>adam-frame</artifactId>
+    <!--
+        <packaging>标签指定了项目的打包方式，默认情况下为jar。
+        但是在此处设置为了pom，这表明该项目是一个聚合模块或者是父POM
+    -->
+    <packaging>pom</packaging>
+    <modules>
+        <module>adam-common</module>
+        <module>adam-manage</module>
+        <module>adam-manage-api</module>
+    </modules>
+
+    <!--引入SpringBoot starter依赖-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.1</version>
+    </parent>
+
+    <!--
+        <version>定义了当前项目的版本号。
+        这里的1.0-SNAPSHOT表示这是一个开发中的快照版本
+    -->
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.plugin.version>3.10.1</maven.plugin.version>
+        <maven.compile.source>1.8</maven.compile.source>
+        <maven.compile.target>1.8</maven.compile.target>
+        <swagger.version>2.2.23</swagger.version>
+    </properties>
+
+    <dependencies>
+        <!--添加lombok依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--添加hutool工具依赖-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.33</version>
+        </dependency>
+    </dependencies>
+
+    <!--定义项目构建过程中使用的远程仓库列表-->
+    <repositories>
+        <!--
+        <repository>元素代表一个单独的远程仓库配置，
+        它指定了Maven如何以及从哪里获取项目的依赖项和其他资源
+        -->
+        <repository>
+            <!--id这是仓库的唯一标识符（ID），用来区分不同的仓库-->
+            <id>central</id>
+            <!--name这是一个描述性的名称，用来标识这个仓库。-->
+            <name>aliyun maven</name>
+            <!--这是仓库的实际地址-->
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <!--
+                该元素指定了仓库的布局类型，默认值为default
+                意味着遵循标准的Maven仓库结构。另一种可能的值是legacy，适用于旧版本的Maven仓库
+            -->
+            <layout>default</layout>
+            <!-- 是否开启发布版构件下载,这部分配置决定了是否允许从该仓库下载发布版本（release）的构件 -->
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <!--
+                是否开启快照版构件下载,这部分控制着是否允许下载快照版本
+                不启用快照版本的下载。快照版本通常是指那些正在开发中的不稳定版本，它们可能会频繁更新。
+                通过禁用快照版本的下载，可以确保只使用稳定发布的版本，避免引入不稳定的依赖
+            -->
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!--
+        <build> 元素用于定义与构建过程相关的所有设置
+        包括源代码目录、资源目录、输出目录以及要使用的插件等
+    -->
+    <build>
+        <!--
+            在 <build> 中定义的 <plugins> 是一系列用于扩展Maven功能的工具集。
+            每个 <plugin> 定义了一组特定的任务或目标（goals），这些任务可以在构建生命周期的不同阶段被执行
+        -->
+        <plugins>
+            <!--
+                每个 <plugin> 元素描述了一个具体的插件及其配置。
+                这里的插件是用来处理Java源代码编译工作的 maven-compiler-plugin
+            -->
+            <plugin>
+                <!-- 使用 Maven 打包插件:编译项目的源代码 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.plugin.version}</version>
+                <!-- 对source、target以及encoding进行相关配置 -->
+                <configuration>
+                    <!--
+                        <source> 和 <target>：这两个参数用于指定编译时所使用的 Java 源代码版本和生成的目标字节码版本
+                    -->
+                    <source>${maven.compile.source}</source>
+                    <target>${maven.compile.target}</target>
+                    <!--
+                        <encoding>：此参数设置了源文件的字符编码方式，默认情况下通常是 UTF-8
+                    -->
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <!--
+            <resources> 是一个容器标签，它允许你在其中定义多个 <resource> 子标签，每个子标签代表一组需要处理的资源文件
+        -->
+        <resources>
+            <!--
+                需要将source中的配置文件打进去
+                配置指定了默认的主要资源目录为 src/main/resources。
+                这意味着该目录下的所有文件都将被复制到构建输出目录（通常是 target/classes），并且会被包含在最终的打包文件里
+             -->
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <!--
+                需要将Mybatis-Plus也要打包进来
+                此部分配置是为了特别处理 MyBatis-Plus 相关的 XML 映射文件
+                按照 Maven 的默认设置，src/main/java 只是用来存放 Java 源代码的，而不会自动处理位于此路径下的其他类型的文件（例如 XML）
+
+                在使用 MyBatis 或 MyBatis-Plus 时，我们经常希望将 Mapper 接口对应的 XML 映射文件与接口定义放在同一目录下以保持逻辑上的关联性。
+                因此，通过上述配置，我们可以告诉 Maven 在构建过程中查找 src/main/java 目录及其子目录中的所有 .xml 文件，并将它们也纳入到构建结果中
+             -->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <!--
+                        src/main/java 目录及其所有子目录中的所有 .xml 文件复制到输出目录中
+                    -->
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+</project>
