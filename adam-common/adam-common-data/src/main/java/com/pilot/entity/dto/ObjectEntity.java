@@ -1,4 +1,4 @@
-package com.pilot.entity;
+package com.pilot.entity.dto;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -7,7 +7,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class BaseEntity implements Serializable {
+public class ObjectEntity implements Serializable {
 
     // 定义序列化ID
     private static final long serialVersionUID = 1L;

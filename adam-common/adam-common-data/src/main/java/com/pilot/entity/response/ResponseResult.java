@@ -1,5 +1,7 @@
-package com.pilot.entity;
+package com.pilot.entity.response;
 
+import com.pilot.entity.base.ResponseEntity;
+import com.pilot.entity.base.ResultType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

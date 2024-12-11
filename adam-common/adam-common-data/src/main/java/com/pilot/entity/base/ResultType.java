@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package com.pilot.entity;
+package com.pilot.entity.base;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

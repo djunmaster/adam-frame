@@ -59,7 +59,7 @@ spring:
 mybatis-plus:
   # 定义了 MyBatis Mapper XML 文件的位置
   mapper-locations: classpath:/com/pilot/mapper/*Mapper.xml
-  # 指定实体类的包路径，MyBatis 会将该路径下的类注册为别名 例如，com.adam.frame.model.User 类在 SQL 中可以用 User 简写。
+  # 指定实体类的包路径，MyBatis 会将该路径下的类注册为别名 例如，com.adam.frame.model.UserVo 类在 SQL 中可以用 UserVo 简写。
   type-aliases-package: com.adam.frame.model
   configuration:
     # 启用驼峰命名规则映射。数据库字段如果是下划线风格（如 user_name），会自动映射到驼峰命名的 Java 属性（如 userName）

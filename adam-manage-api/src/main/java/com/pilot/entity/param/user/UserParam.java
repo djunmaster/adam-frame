@@ -1,4 +1,4 @@
-package com.pilot.entity.param;
+package com.pilot.entity.param.user;
 
 import lombok.Data;
 

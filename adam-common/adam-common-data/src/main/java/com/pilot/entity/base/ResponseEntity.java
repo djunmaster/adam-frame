@@ -1,4 +1,4 @@
-package com.pilot.entity;
+package com.pilot.entity.base;
 
 import java.io.Serializable;
 
