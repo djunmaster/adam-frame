@@ -235,7 +235,7 @@ public class SqlBeautyInterceptor implements Interceptor {
 
         // 处理字符串类型
         if (parameterMapping != null && parameterMapping.getJavaType().isAssignableFrom(String.class)) {
-            return "\"" + value.toString() + "\"";
+            return "\"" + value + "\"";
         }
 
         return value.toString();

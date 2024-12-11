@@ -65,6 +65,5 @@ mybatis-plus:
     # 启用驼峰命名规则映射。数据库字段如果是下划线风格（如 user_name），会自动映射到驼峰命名的 Java 属性（如 userName）
     map-underscore-to-camel-case: true
 
-
-
-
+sql:
+  beauty: false
