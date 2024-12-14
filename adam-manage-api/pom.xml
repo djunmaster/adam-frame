@@ -35,12 +35,22 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
+        <!--添加一些常见数据验证注解-->
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+
+        <!--添加hutool工具类-->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.8.33</version>
         </dependency>
 
+        <!--添加adam-common-data依赖-->
         <dependency>
             <groupId>com.pilot</groupId>
             <artifactId>adam-common-data</artifactId>
