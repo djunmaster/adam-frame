@@ -21,6 +21,7 @@
         <module>adam-common</module>
         <module>adam-manage</module>
         <module>adam-manage-api</module>
+        <module>adam-common/adam-common-redis</module>
     </modules>
 
     <!--引入SpringBoot starter依赖-->
@@ -60,15 +61,34 @@
             <version>5.8.33</version>
         </dependency>
 
-        <!--添加 swagger文档依赖-->
+        <!-- 引入 Swagger 依赖 -->
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-swagger2</artifactId>-->
+<!--            <version>2.9.2</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; 引入 Swagger UI 依赖，以实现 API 接口的 UI 界面 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-swagger-ui</artifactId>-->
+<!--            <version>2.9.2</version>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>${swagger.version}</version>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring</artifactId>
+            <version>1.9.6</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-ui</artifactId>
+            <version>1.9.6</version>
+        </dependency>
+
     </dependencies>
 
-    <!--定义项目构建过程中使用的远程仓库列表-->
     <repositories>
         <!--
         <repository>元素代表一个单独的远程仓库配置，

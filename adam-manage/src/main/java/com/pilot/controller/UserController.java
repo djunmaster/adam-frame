@@ -2,7 +2,6 @@ package com.pilot.controller;
 
 import com.pilot.api.UserApi;
 import com.pilot.entity.param.BasePageParam;
-import com.pilot.entity.param.BaseParam;
 import com.pilot.entity.param.user.UserDeleteParam;
 import com.pilot.entity.param.user.UserParam;
 import com.pilot.entity.response.PageView;
@@ -10,7 +9,6 @@ import com.pilot.entity.response.ResponsePageResult;
 import com.pilot.entity.response.ResponseResult;
 import com.pilot.entity.vo.UserVo;
 import com.pilot.service.UserService;
-import com.pilot.util.CollectionUtil;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -58,6 +56,4 @@ public class UserController implements UserApi {
         userVoPageView.setLists(userVos);
         return ResponsePageResult.ok(userVoPageView);
     }
-
-
 }
