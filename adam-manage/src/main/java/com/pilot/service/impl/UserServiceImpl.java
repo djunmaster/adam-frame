@@ -10,7 +10,7 @@ import com.pilot.entity.param.user.UserParam;
 import com.pilot.entity.vo.UserVo;
 import com.pilot.mapper.UserMapper;
 import com.pilot.service.UserService;
-import com.pilot.util.BeanConvertUtils;
+import com.pilot.util.BeanConvertUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -46,6 +46,6 @@ public class UserServiceImpl implements UserService {
         wrapper.eq(User::getFlag, 0);
         Page<User> userPages = userMapper.selectPage(userPage, wrapper);
         List<User> records = userPages.getRecords();
-        return BeanConvertUtils.convertListTo(records, UserVo::new);
+        return BeanConvertUtil.convertListTo(records, UserVo::new);
     }
 }

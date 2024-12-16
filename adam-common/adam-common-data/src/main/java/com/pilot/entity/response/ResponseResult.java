@@ -2,6 +2,7 @@ package com.pilot.entity.response;
 
 import com.pilot.entity.base.ResponseEntity;
 import com.pilot.entity.base.ResultType;
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,6 +12,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+@ApiModel(value = "ResponseResult", description = "返回对象基类")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

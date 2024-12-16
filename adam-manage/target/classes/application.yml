@@ -54,6 +54,29 @@ spring:
             # 检查 SQL 是否符合预设的安全规则，防止执行高危操作（如删除所有表）
           wall:
             enabled: true
+  redis:
+    # 指定 Redis 服务器的 IP 和端口
+    host: 127.0.0.1
+    # 指定 Redis 服务器的端口
+    port: 6379
+    # Lettuce 是一个高性能的 Redis 客户端
+    lettuce:
+      # Lettuce 客户端的连接池相关配置
+      pool:
+        # 连接池中可同时分配的最大连接数,如果设置为 -1，表示没有限制
+        # 如果连接数超过该限制，新的请求将被阻塞，直到连接池有可用连接
+        max-active: 8
+        # 获取连接时最大的等待时间
+        # 如果设置为 -1，表示不超时
+        max-wait: -1ms
+        # 连接池中保持的最大空闲连接数,避免频繁创建和销毁连接，提高性能
+        max-idle: 8
+        # 连接池中保持的最小空闲连接数0 表示连接池可以允许空闲连接数
+        min-idle: 0
+        # 100ms 表示关闭连接池时会等待 100 毫秒以确保资源释放。如果设置为 0，表示立即关闭连接池
+        shutdown-timeout: 100ms
+
+
 
 # mybatis-plus 配置
 mybatis-plus:
@@ -67,3 +90,12 @@ mybatis-plus:
 
 sql:
   beauty: false
+
+swagger:
+  base-package: com.pilot.controller
+  title: "adam-frame"
+  contact-name: "djunmaster"
+  contactUrl: "https://github.com/djunmaster"
+  contact-email: "1003478061@qq.com"
+  version: "1.0.0"
+  description: "开箱即用的脚手架"

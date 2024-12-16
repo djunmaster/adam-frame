@@ -7,11 +7,11 @@ import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-public class BeanConvertUtils extends BeanUtils {
+public class BeanConvertUtil extends BeanUtils {
 
-    private static final Logger log = LoggerFactory.getLogger(BeanConvertUtils.class);
+    private static final Logger log = LoggerFactory.getLogger(BeanConvertUtil.class);
 
-    private BeanConvertUtils() {
+    private BeanConvertUtil() {
         // 私有构造函数，防止实例化
     }
 
