@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/adam-manage.iml" filepath="$PROJECT_DIR$/adam-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adam-manage/adam-manage.iml" filepath="$PROJECT_DIR$/adam-manage/adam-manage.iml" />
     </modules>
   </component>
 </project>
