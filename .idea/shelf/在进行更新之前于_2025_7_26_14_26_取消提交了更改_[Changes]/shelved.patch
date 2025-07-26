@@ -1,0 +1,215 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Compiled class file\r\n*.class\r\n\r\n# Log file\r\n*.log\r\n\r\n# BlueJ files\r\n*.ctxt\r\n\r\n# Mobile Tools for Java (J2ME)\r\n.mtj.tmp/\r\n\r\n# Package Files #\r\n*.jar\r\n*.war\r\n*.xml\r\n*.nar\r\n*.ear\r\n*.zip\r\n*.tar.gz\r\n*.rar\r\n\r\n# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml\r\nhs_err_pid*\r\nreplay_pid*\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ b/.gitignore	(date 1752411101096)
+@@ -13,7 +13,7 @@
+ # Package Files #
+ *.jar
+ *.war
+-*.xml
++#*.xml
+ *.nar
+ *.ear
+ *.zip
+Index: adam-manage-api.iml
+===================================================================
+diff --git a/adam-manage-api.iml b/adam-manage-api.iml
+deleted file mode 100644
+--- a/adam-manage-api.iml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ /dev/null	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+-    <option name="activeLocationsIds" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: adam-common.iml
+===================================================================
+diff --git a/adam-common.iml b/adam-common.iml
+deleted file mode 100644
+--- a/adam-common.iml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ /dev/null	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+-    <option name="activeLocationsIds" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: adam-common-web.iml
+===================================================================
+diff --git a/adam-common-web.iml b/adam-common-web.iml
+deleted file mode 100644
+--- a/adam-common-web.iml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ /dev/null	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+-    <option name="activeLocationsIds" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: adam-manage.iml
+===================================================================
+diff --git a/adam-manage.iml b/adam-manage.iml
+deleted file mode 100644
+--- a/adam-manage.iml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ /dev/null	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+-    <option name="activeLocationsIds" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: adam-common-data.iml
+===================================================================
+diff --git a/adam-common-data.iml b/adam-common-data.iml
+deleted file mode 100644
+--- a/adam-common-data.iml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ /dev/null	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+-    <option name="activeLocationsIds" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: adam-common-redis.iml
+===================================================================
+diff --git a/adam-common-redis.iml b/adam-common-redis.iml
+deleted file mode 100644
+--- a/adam-common-redis.iml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ /dev/null	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+-    <option name="activeLocationsIds" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: adam-common/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n    <parent>\r\n        <groupId>com.pilot</groupId>\r\n        <artifactId>adam-frame</artifactId>\r\n        <version>1.0-SNAPSHOT</version>\r\n    </parent>\r\n\r\n    <artifactId>adam-common</artifactId>\r\n    <packaging>pom</packaging>\r\n\r\n    <name>adam-common</name>\r\n\r\n    <modules>\r\n        <module>adam-common-web</module>\r\n        <module>adam-common-data</module>\r\n    </modules>\r\n\r\n    <properties>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>junit</groupId>\r\n            <artifactId>junit</artifactId>\r\n            <version>3.8.1</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n    </dependencies>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/adam-common/pom.xml b/adam-common/pom.xml
+--- a/adam-common/pom.xml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ b/adam-common/pom.xml	(date 1752410779666)
+@@ -15,6 +15,7 @@
+     <modules>
+         <module>adam-common-web</module>
+         <module>adam-common-data</module>
++        <module>adam-common-log</module>
+     </modules>
+ 
+     <properties>
+Index: adam-manage/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 定义了服务器的启动端口号\r\nserver:\r\n  port: 8080\r\n\r\n\r\nspring:\r\n  datasource:\r\n    # 数据库的用户名，用于连接数据库\r\n    username: root\r\n    # 数据库的密码，用于连接数据库\r\n    password: 12345\r\n    # 数据库驱动类的全限定名 MySQL 使用的是 com.mysql.cj.jdbc.Driver\r\n    driver-class-name: com.mysql.cj.jdbc.Driver\r\n    #数据库连接字符串，主要组成部分如下：\r\n    #localhost: 数据库主机地址，本地服务器。\r\n    #3306: 数据库端口。\r\n    #adamdb: 数据库名称。\r\n    #useUnicode=true: 启用 Unicode 支持。\r\n    #characterEncoding=UTF-8: 使用 UTF-8 编码以支持多语言字符集。\r\n    #serverTimezone=UTC: 设置服务器时区为 UTC，避免时区不匹配问题。\r\n    url: jdbc:mysql://localhost:3306/adamdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC\r\n    # 指定使用 Druid 作为数据库连接池\r\n    type: com.alibaba.druid.pool.DruidDataSource\r\n    druid:\r\n      # 初始化连接池时创建的连接数量\r\n      initial-size: 20\r\n      # 连接池中保持的最小空闲连接数\r\n      min-idle: 20\r\n      # 连接池中允许的最大活跃连接数\r\n      max-active: 50\r\n      # 配置获取连接等待超时的时间，单位毫秒。如果超过等待时间，则直接抛出异常\r\n      max-wait: 6000\r\n      # Druid 提供了一个内置的监控页面，用于展示数据库连接池的运行状况，包括 SQL 执行统计、连接池状态、SQL 性能分析等\r\n      stat-view-servlet:\r\n        # 表示启用了 Druid 的监控页面功能，并设置访问路径为 /druid\r\n        enabled: true\r\n        # 指定监控页面的访问路径。例如，访问 http://localhost:8080/druid/ 可查看监控页面。\r\n        url-pattern: /druid/*\r\n        # 设置访问监控页面的登录用户名和密码\r\n        login-username: admin\r\n        login-password: 123456\r\n        # 启用了统计过滤器，用于记录和分析 SQL 的执行情况，并记录慢 SQL\r\n        filter:\r\n          # 启用统计过滤器，并设置慢 SQL 的阈值\r\n          stat:\r\n            # 启用统计过滤器\r\n            enabled: true\r\n            # 启用慢 SQL 日志输出功能 启用后，慢 SQL 会记录在日志中。\r\n            log-slow-sql: true\r\n            # 指定慢 SQL 的阈值，单位毫秒\r\n            slow-sql-millis: 2000\r\n            # 启用了防火墙过滤器（WallFilter），用于防止 SQL 注入和执行高危 SQL 语句\r\n            # 检测并拦截恶意的 SQL 语句（如 SQL 注入攻击）\r\n            # 检查 SQL 是否符合预设的安全规则，防止执行高危操作（如删除所有表）\r\n          wall:\r\n            enabled: true\r\n  redis:\r\n    # 指定 Redis 服务器的 IP 和端口\r\n    host: 127.0.0.1\r\n    # 指定 Redis 服务器的端口\r\n    port: 6379\r\n    # Lettuce 是一个高性能的 Redis 客户端\r\n    lettuce:\r\n      # Lettuce 客户端的连接池相关配置\r\n      pool:\r\n        # 连接池中可同时分配的最大连接数,如果设置为 -1，表示没有限制\r\n        # 如果连接数超过该限制，新的请求将被阻塞，直到连接池有可用连接\r\n        max-active: 8\r\n        # 获取连接时最大的等待时间\r\n        # 如果设置为 -1，表示不超时\r\n        max-wait: -1ms\r\n        # 连接池中保持的最大空闲连接数,避免频繁创建和销毁连接，提高性能\r\n        max-idle: 8\r\n        # 连接池中保持的最小空闲连接数0 表示连接池可以允许空闲连接数\r\n        min-idle: 0\r\n        # 100ms 表示关闭连接池时会等待 100 毫秒以确保资源释放。如果设置为 0，表示立即关闭连接池\r\n        shutdown-timeout: 100ms\r\n\r\n\r\n\r\n# mybatis-plus 配置\r\nmybatis-plus:\r\n  # 定义了 MyBatis Mapper XML 文件的位置\r\n  mapper-locations: classpath:/com/pilot/mapper/*Mapper.xml\r\n  # 指定实体类的包路径，MyBatis 会将该路径下的类注册为别名 例如，com.adam.frame.model.UserVo 类在 SQL 中可以用 UserVo 简写。\r\n  type-aliases-package: com.adam.frame.model\r\n  configuration:\r\n    # 启用驼峰命名规则映射。数据库字段如果是下划线风格（如 user_name），会自动映射到驼峰命名的 Java 属性（如 userName）\r\n    map-underscore-to-camel-case: true\r\n\r\nsql:\r\n  beauty: false\r\n\r\nswagger:\r\n  base-package: com.pilot.controller\r\n  title: \"adam-frame\"\r\n  contact-name: \"djunmaster\"\r\n  contactUrl: \"https://github.com/djunmaster\"\r\n  contact-email: \"1003478061@qq.com\"\r\n  version: \"1.0.0\"\r\n  description: \"开箱即用的脚手架\"\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/adam-manage/src/main/resources/application.yml b/adam-manage/src/main/resources/application.yml
+--- a/adam-manage/src/main/resources/application.yml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ b/adam-manage/src/main/resources/application.yml	(date 1752413444681)
+@@ -99,3 +99,6 @@
+   contact-email: "1003478061@qq.com"
+   version: "1.0.0"
+   description: "开箱即用的脚手架"
++
++logging:
++  config: classpath:log4j-spring.xml
+\ No newline at end of file
+Index: adam-manage/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n    <parent>\r\n        <groupId>com.pilot</groupId>\r\n        <artifactId>adam-frame</artifactId>\r\n        <version>1.0-SNAPSHOT</version>\r\n    </parent>\r\n\r\n    <artifactId>adam-manage</artifactId>\r\n    <packaging>jar</packaging>\r\n\r\n    <properties>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n        <junit.version>3.8.1</junit.version>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>junit</groupId>\r\n            <artifactId>junit</artifactId>\r\n            <version>${junit.version}</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>com.pilot</groupId>\r\n            <artifactId>adam-common-data</artifactId>\r\n            <version>1.0-SNAPSHOT</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>com.pilot</groupId>\r\n            <artifactId>adam-manage-api</artifactId>\r\n            <version>1.0-SNAPSHOT</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>com.pilot</groupId>\r\n            <artifactId>adam-common-redis</artifactId>\r\n            <version>1.0-SNAPSHOT</version>\r\n        </dependency>\r\n    </dependencies>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/adam-manage/pom.xml b/adam-manage/pom.xml
+--- a/adam-manage/pom.xml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ b/adam-manage/pom.xml	(date 1752414800818)
+@@ -27,6 +27,12 @@
+             <groupId>com.pilot</groupId>
+             <artifactId>adam-common-data</artifactId>
+             <version>1.0-SNAPSHOT</version>
++            <exclusions>
++                <exclusion>
++                    <artifactId>spring-boot-starter-logging</artifactId>
++                    <groupId>org.springframework.boot</groupId>
++                </exclusion>
++            </exclusions>
+         </dependency>
+ 
+         <dependency>
+@@ -40,5 +46,11 @@
+             <artifactId>adam-common-redis</artifactId>
+             <version>1.0-SNAPSHOT</version>
+         </dependency>
++
++        <dependency>
++            <groupId>com.pilot</groupId>
++            <artifactId>adam-common-log</artifactId>
++            <version>1.0-SNAPSHOT</version>
++        </dependency>
+     </dependencies>
+ </project>
+Index: adam-manage/target/classes/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 定义了服务器的启动端口号\r\nserver:\r\n  port: 8080\r\n\r\n\r\nspring:\r\n  datasource:\r\n    # 数据库的用户名，用于连接数据库\r\n    username: root\r\n    # 数据库的密码，用于连接数据库\r\n    password: 12345\r\n    # 数据库驱动类的全限定名 MySQL 使用的是 com.mysql.cj.jdbc.Driver\r\n    driver-class-name: com.mysql.cj.jdbc.Driver\r\n    #数据库连接字符串，主要组成部分如下：\r\n    #localhost: 数据库主机地址，本地服务器。\r\n    #3306: 数据库端口。\r\n    #adamdb: 数据库名称。\r\n    #useUnicode=true: 启用 Unicode 支持。\r\n    #characterEncoding=UTF-8: 使用 UTF-8 编码以支持多语言字符集。\r\n    #serverTimezone=UTC: 设置服务器时区为 UTC，避免时区不匹配问题。\r\n    url: jdbc:mysql://localhost:3306/adamdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC\r\n    # 指定使用 Druid 作为数据库连接池\r\n    type: com.alibaba.druid.pool.DruidDataSource\r\n    druid:\r\n      # 初始化连接池时创建的连接数量\r\n      initial-size: 20\r\n      # 连接池中保持的最小空闲连接数\r\n      min-idle: 20\r\n      # 连接池中允许的最大活跃连接数\r\n      max-active: 50\r\n      # 配置获取连接等待超时的时间，单位毫秒。如果超过等待时间，则直接抛出异常\r\n      max-wait: 6000\r\n      # Druid 提供了一个内置的监控页面，用于展示数据库连接池的运行状况，包括 SQL 执行统计、连接池状态、SQL 性能分析等\r\n      stat-view-servlet:\r\n        # 表示启用了 Druid 的监控页面功能，并设置访问路径为 /druid\r\n        enabled: true\r\n        # 指定监控页面的访问路径。例如，访问 http://localhost:8080/druid/ 可查看监控页面。\r\n        url-pattern: /druid/*\r\n        # 设置访问监控页面的登录用户名和密码\r\n        login-username: admin\r\n        login-password: 123456\r\n        # 启用了统计过滤器，用于记录和分析 SQL 的执行情况，并记录慢 SQL\r\n        filter:\r\n          # 启用统计过滤器，并设置慢 SQL 的阈值\r\n          stat:\r\n            # 启用统计过滤器\r\n            enabled: true\r\n            # 启用慢 SQL 日志输出功能 启用后，慢 SQL 会记录在日志中。\r\n            log-slow-sql: true\r\n            # 指定慢 SQL 的阈值，单位毫秒\r\n            slow-sql-millis: 2000\r\n            # 启用了防火墙过滤器（WallFilter），用于防止 SQL 注入和执行高危 SQL 语句\r\n            # 检测并拦截恶意的 SQL 语句（如 SQL 注入攻击）\r\n            # 检查 SQL 是否符合预设的安全规则，防止执行高危操作（如删除所有表）\r\n          wall:\r\n            enabled: true\r\n  redis:\r\n    # 指定 Redis 服务器的 IP 和端口\r\n    host: 127.0.0.1\r\n    # 指定 Redis 服务器的端口\r\n    port: 6379\r\n    # Lettuce 是一个高性能的 Redis 客户端\r\n    lettuce:\r\n      # Lettuce 客户端的连接池相关配置\r\n      pool:\r\n        # 连接池中可同时分配的最大连接数,如果设置为 -1，表示没有限制\r\n        # 如果连接数超过该限制，新的请求将被阻塞，直到连接池有可用连接\r\n        max-active: 8\r\n        # 获取连接时最大的等待时间\r\n        # 如果设置为 -1，表示不超时\r\n        max-wait: -1ms\r\n        # 连接池中保持的最大空闲连接数,避免频繁创建和销毁连接，提高性能\r\n        max-idle: 8\r\n        # 连接池中保持的最小空闲连接数0 表示连接池可以允许空闲连接数\r\n        min-idle: 0\r\n        # 100ms 表示关闭连接池时会等待 100 毫秒以确保资源释放。如果设置为 0，表示立即关闭连接池\r\n        shutdown-timeout: 100ms\r\n\r\n\r\n\r\n# mybatis-plus 配置\r\nmybatis-plus:\r\n  # 定义了 MyBatis Mapper XML 文件的位置\r\n  mapper-locations: classpath:/com/pilot/mapper/*Mapper.xml\r\n  # 指定实体类的包路径，MyBatis 会将该路径下的类注册为别名 例如，com.adam.frame.model.UserVo 类在 SQL 中可以用 UserVo 简写。\r\n  type-aliases-package: com.adam.frame.model\r\n  configuration:\r\n    # 启用驼峰命名规则映射。数据库字段如果是下划线风格（如 user_name），会自动映射到驼峰命名的 Java 属性（如 userName）\r\n    map-underscore-to-camel-case: true\r\n\r\nsql:\r\n  beauty: false\r\n\r\nswagger:\r\n  base-package: com.pilot.controller\r\n  title: \"adam-frame\"\r\n  contact-name: \"djunmaster\"\r\n  contactUrl: \"https://github.com/djunmaster\"\r\n  contact-email: \"1003478061@qq.com\"\r\n  version: \"1.0.0\"\r\n  description: \"开箱即用的脚手架\"\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/adam-manage/target/classes/application.yml b/adam-manage/target/classes/application.yml
+--- a/adam-manage/target/classes/application.yml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ b/adam-manage/target/classes/application.yml	(date 1752413444681)
+@@ -99,3 +99,6 @@
+   contact-email: "1003478061@qq.com"
+   version: "1.0.0"
+   description: "开箱即用的脚手架"
++
++logging:
++  config: classpath:log4j-spring.xml
+\ No newline at end of file
+Index: adam-common/adam-common-web/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n    <parent>\r\n        <groupId>com.pilot</groupId>\r\n        <artifactId>adam-common</artifactId>\r\n        <version>1.0-SNAPSHOT</version>\r\n    </parent>\r\n\r\n    <artifactId>adam-common-web</artifactId>\r\n    <packaging>jar</packaging>\r\n\r\n    <properties>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>junit</groupId>\r\n            <artifactId>junit</artifactId>\r\n            <version>3.8.1</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n\r\n        <!--提供了构建 RESTFul 服务、MVC 模式、以及处理 HTTP 请求的基本功能-->\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-web</artifactId>\r\n        </dependency>\r\n    </dependencies>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/adam-common/adam-common-web/pom.xml b/adam-common/adam-common-web/pom.xml
+--- a/adam-common/adam-common-web/pom.xml	(revision 72b379c8ff3a26376ab37617b88166b271e2f0ef)
++++ b/adam-common/adam-common-web/pom.xml	(date 1752414753689)
+@@ -26,6 +26,12 @@
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-web</artifactId>
++            <exclusions>
++                <exclusion>
++                    <groupId>org.springframework.boot</groupId>
++                    <artifactId>spring-boot-starter-logging</artifactId>
++                </exclusion>
++            </exclusions>
+         </dependency>
+     </dependencies>
+ </project>

@@ -9,36 +9,55 @@
 
     <artifactId>adam-manage</artifactId>
     <packaging>jar</packaging>
+    <name>adam-manage</name>
+    <description>管理服务主应用模块</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>3.8.1</junit.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
+            <groupId>com.pilot</groupId>
+            <artifactId>adam-common-redis</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.pilot</groupId>
-            <artifactId>adam-common-data</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>adam-common-log</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.pilot</groupId>
             <artifactId>adam-manage-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!-- 引入MapStruct依赖，实现实体拷贝 -->
         <dependency>
-            <groupId>com.pilot</groupId>
-            <artifactId>adam-common-redis</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+        <!-- MapStruct注解处理器，编译时生成实现类 -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Spring Boot Maven 插件，用于打包可执行jar -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

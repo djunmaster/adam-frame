@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="adam-common-data" />
+        <module name="adam-common-redis" />
+        <module name="adam-manage" />
+        <module name="adam-common-web" />
+        <module name="adam-common-log" />
+        <module name="adam-manage-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ape-01-creational" target="1.8" />
+      <module name="ape-02-structural" target="1.8" />
+      <module name="ape-03-behaviour" target="1.8" />
+      <module name="ape-behaviour-01-template" target="1.8" />
+      <module name="ape-behaviour-02-strategy" target="1.8" />
+      <module name="ape-behaviour-03-command" target="1.8" />
+      <module name="ape-behaviour-04-chain" target="1.8" />
+      <module name="ape-behaviour-05-state" target="1.8" />
+      <module name="ape-behaviour-06-observer" target="1.8" />
+      <module name="ape-behaviour-07-mediator" target="1.8" />
+      <module name="ape-behaviour-08-iterator" target="1.8" />
+      <module name="ape-behaviour-09-visitor" target="1.8" />
+      <module name="ape-behaviour-10-memento" target="1.8" />
+      <module name="ape-behaviour-11-interpreter" target="1.8" />
+      <module name="ape-cloud" target="1.8" />
+      <module name="ape-cloud-eureka" target="1.8" />
+      <module name="ape-cloud-eureka-server" target="1.8" />
+      <module name="ape-cloud-home" target="1.8" />
+      <module name="ape-cloud-hystrix" target="1.8" />
+      <module name="ape-cloud-open-feign" target="1.8" />
+      <module name="ape-cloud-ribbon" target="1.8" />
+      <module name="ape-cloud-sku" target="1.8" />
+      <module name="ape-common" target="1.8" />
+      <module name="ape-common-job" target="1.8" />
+      <module name="ape-common-log" target="1.8" />
+      <module name="ape-common-mail" target="1.8" />
+      <module name="ape-common-mq" target="1.8" />
+      <module name="ape-common-mybatisplus" target="1.8" />
+      <module name="ape-common-redis" target="1.8" />
+      <module name="ape-common-starter" target="1.8" />
+      <module name="ape-common-swagger" target="1.8" />
+      <module name="ape-common-test" target="1.8" />
+      <module name="ape-common-tool" target="1.8" />
+      <module name="ape-common-web" target="1.8" />
+      <module name="ape-common-websocket" target="1.8" />
+      <module name="ape-creational-01-singleton" target="1.8" />
+      <module name="ape-creational-02-factory" target="1.8" />
+      <module name="ape-creational-03-abstractFactory" target="1.8" />
+      <module name="ape-creational-04-prototype" target="1.8" />
+      <module name="ape-creational-05-builder" target="1.8" />
+      <module name="ape-demo" target="1.8" />
+      <module name="ape-dependencies" target="1.8" />
+      <module name="ape-frame" target="1.5" />
+      <module name="ape-gof-23" target="1.8" />
+      <module name="ape-structural-01-proxy" target="1.8" />
+      <module name="ape-structural-02-adapter" target="1.8" />
+      <module name="ape-structural-03-decorator" target="1.8" />
+      <module name="ape-structural-04-bridge" target="1.8" />
+      <module name="ape-structural-05-facade" target="1.8" />
+      <module name="ape-structural-06-composite" target="1.8" />
+      <module name="ape-structural-07-flyweight" target="1.8" />
+      <module name="easy-mongo-spring-boot-starter" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="adam-common" options="" />
+      <module name="adam-common-data" options="" />
+      <module name="adam-common-log" options="" />
+      <module name="adam-common-redis" options="" />
+      <module name="adam-common-web" options="" />
+      <module name="adam-dependencies" options="" />
+      <module name="adam-frame" options="" />
+      <module name="adam-manage" options="" />
+      <module name="adam-manage-api" options="" />
+    </option>
+  </component>
+</project>

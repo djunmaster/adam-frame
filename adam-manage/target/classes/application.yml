@@ -99,3 +99,7 @@ swagger:
   contact-email: "1003478061@qq.com"
   version: "1.0.0"
   description: "开箱即用的脚手架"
+
+
+logging:
+  config: classpath:log4j-spring.xml

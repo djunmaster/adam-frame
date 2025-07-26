@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteUser(UserDeleteParam userDeleteParam) {
-        userMapper.deleteByIds(userDeleteParam.getUserIds());
+        userMapper.delete(new LambdaQueryWrapper<User>().in(User::getUserId, userDeleteParam.getUserIds()));
     }
 
     @Override

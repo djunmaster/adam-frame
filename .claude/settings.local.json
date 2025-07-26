@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn clean compile -T 1C)",
+      "Bash(java -version)",
+      "Bash(mvn validate)",
+      "Bash(find . -name \"pom.xml\" -exec echo \"=== {} ===\" ; -exec head -15 {} ;)",
+      "Bash(tree -d -L 3 .)",
+      "Bash(find . -type d -name \"*adam*\")",
+      "Bash(mvn clean package)",
+      "Bash(echo $JAVA_HOME)",
+      "Bash(find /usr -name \"java\" -type f)",
+      "Bash(ls /usr/lib/jvm/)",
+      "Bash(find /opt /usr -name \"*jdk*\" -type d)",
+      "Bash(find /usr -name \"javac\")",
+      "Bash(find /usr -name \"javac\" -type f -executable)",
+      "Bash(export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64)",
+      "Bash(mvn clean package -Dmaven.test.skip=true)",
+      "Bash(mkdir -p backup-poms)",
+      "Bash(find /mnt/d/program/JavaProject/Java/adam-frame -name \"pom.xml\" -exec cp {} backup-poms/{}.backup ;)",
+      "Bash(cp pom.xml backup-poms/root-pom.xml.backup)",
+      "Bash(cp adam-dependencies/pom.xml backup-poms/dependencies-pom.xml.backup)",
+      "Bash(cp adam-common/pom.xml backup-poms/common-pom.xml.backup)",
+      "Bash(cp adam-manage/pom.xml backup-poms/manage-pom.xml.backup)",
+      "Bash(cp adam-manage-api/pom.xml backup-poms/manage-api-pom.xml.backup)",
+      "Bash(cp adam-common/adam-common-web/pom.xml backup-poms/common-web-pom.xml.backup)",
+      "Bash(cp adam-common/adam-common-data/pom.xml backup-poms/common-data-pom.xml.backup)",
+      "Bash(cp adam-common/adam-common-redis/pom.xml backup-poms/common-redis-pom.xml.backup)",
+      "Bash(cp adam-common/adam-common-log/pom.xml backup-poms/common-log-pom.xml.backup)",
+      "Bash(mvn clean compile -U)"
+    ],
+    "deny": []
+  }
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud-home/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud-sku/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud/ape-cloud-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud/ape-cloud-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud/ape-cloud-open-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud/ape-cloud-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-job/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-log/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-mail/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-mq/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-starter/easy-mongo-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-test/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-tool/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/ape-common-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-dependencies/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-01-creational/ape-creational-01-singleton/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-01-creational/ape-creational-02-factory/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-01-creational/ape-creational-03-abstractFactory/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-01-creational/ape-creational-04-prototype/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-01-creational/ape-creational-05-builder/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-01-creational/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/ape-structural-01-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/ape-structural-02-adapter/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/ape-structural-03-decorator/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/ape-structural-04-bridge/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/ape-structural-05-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/ape-structural-06-composite/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/ape-structural-07-flyweight/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-02-structural/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-01-template/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-02-strategy/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-03-command/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-04-chain/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-05-state/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-06-observer/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-07-mediator/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-08-iterator/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-09-visitor/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-10-memento/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/ape-behaviour-11-interpreter/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/ape-03-behaviour/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/ape-gof-23/pom.xml" />
+        <option value="$PROJECT_DIR$/../ape-frame/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

@@ -8,5 +8,5 @@ import java.util.List;
 @Data
 public class UserDeleteParam {
     // 删除用户id列表
-    private List<Integer> userIds;
+    private List<Long> userIds;
 }

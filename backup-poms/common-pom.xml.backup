@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 关键修复：移除了错误的 <relativePath/> 标签 -->
+    <parent>
+        <groupId>com.pilot</groupId>
+        <artifactId>adam-frame</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <!--
+            <relativePath/> 已被移除。
+            现在 Maven 将使用默认行为，在上一级目录查找父 POM，这是正确的。
+        -->
+    </parent>
+
+    <!--
+        artifactId 保持不变，但移除了冗余的 <version> 标签。
+        版本号将自动从父项目 adam-frame 继承，确保版本统一。
+    -->
+    <artifactId>adam-common</artifactId>
+    <packaging>pom</packaging>
+
+    <name>adam-common</name>
+
+    <modules>
+        <module>adam-common-web</module>
+        <module>adam-common-data</module>
+        <module>adam-common-log</module>
+        <module>adam-common-redis</module>
+    </modules>
+
+    <!--
+        这个 dependencyManagement 在聚合模块中通常不是必须的，
+        因为版本已由顶层父 POM(adam-frame)管理。
+        但保留它也无害。
+    -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.pilot</groupId>
+                <artifactId>adam-common-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pilot</groupId>
+                <artifactId>adam-common-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pilot</groupId>
+                <artifactId>adam-common-log</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pilot</groupId>
+                <artifactId>adam-common-redis</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
