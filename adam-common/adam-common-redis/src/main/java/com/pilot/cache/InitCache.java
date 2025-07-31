@@ -1,7 +1,7 @@
 package com.pilot.cache;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.pilot.SpringContextUtil;
+import com.pilot.util.SpringContextUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;

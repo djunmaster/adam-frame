@@ -1,9 +1,0 @@
-com\pilot\entity\param\user\UserParam.class
-com\pilot\exception\FeignRequestException.class
-com\pilot\api\UserApi.class
-com\pilot\entity\param\user\UserDeleteParam.class
-com\pilot\entity\vo\UserVo.class
-com\pilot\exception\ServiceException.class
-com\pilot\exception\BaseRuntimeException.class
-com\pilot\exception\DataNotFoundException.class
-com\pilot\exception\BusinessException.class

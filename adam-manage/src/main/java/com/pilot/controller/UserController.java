@@ -1,6 +1,8 @@
 package com.pilot.controller;
 
+import cn.hutool.core.date.LocalDateTimeUtil;
 import com.pilot.api.UserApi;
+import com.pilot.core.WordExportService;
 import com.pilot.entity.param.BasePageParam;
 import com.pilot.entity.param.user.UserDeleteParam;
 import com.pilot.entity.param.user.UserParam;
@@ -12,13 +14,18 @@ import com.pilot.service.UserService;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.List;
+import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @RestController
 public class UserController implements UserApi {
 
     @Resource
     private UserService userService;
+
+    @Resource
+    private WordExportService wordExportService;
 
     /**
      * 添加用户
@@ -55,5 +62,22 @@ public class UserController implements UserApi {
         PageView<UserVo> userVoPageView = new PageView<>();
         userVoPageView.setLists(userVos);
         return ResponsePageResult.ok(userVoPageView);
+    }
+
+    @Override
+    public ResponseResult<Void> exportUserInfo(HttpServletResponse response) {
+        // 1. 准备数据模型
+        Map<String, Object> dataMap = new HashMap<>();
+        dataMap.put("userId", UUID.randomUUID().toString().substring(0, 8));
+        dataMap.put("username", "张三");
+        dataMap.put("registerDate", LocalDateTimeUtil.now());
+
+        // 2. 使用 Fluent API 执行导出
+        wordExportService
+                .withTemplate("user_info.ftl")
+                .withData(dataMap)
+                .toResponse(response, "用户信息报告");
+
+        return ResponseResult.ok();
     }
 }

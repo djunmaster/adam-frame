@@ -35,7 +35,9 @@
         <hutool.version>5.8.20</hutool.version>
         <knife4j.version>2.0.9</knife4j.version>
         <junit.version>4.13.2</junit.version>
-        
+        <freemarker.version>2.3.30</freemarker.version>
+        <pinyin4j.version>2.5.0</pinyin4j.version>
+
         <!-- 插件版本 -->
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
@@ -62,6 +64,11 @@
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
             <!-- Druid 数据源 Starter -->
@@ -140,6 +147,19 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+            </dependency>
+
+            <!--FreeMarker模板引擎-->
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.belerweb</groupId>
+                <artifactId>pinyin4j</artifactId>
+                <version>${pinyin4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

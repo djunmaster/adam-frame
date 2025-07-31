@@ -18,5 +18,7 @@
         <module>adam-common-data</module>
         <module>adam-common-log</module>
         <module>adam-common-redis</module>
+        <module>adam-common-tool</module>
+        <module>adam-common-starter</module>
     </modules>
 </project>

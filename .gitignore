@@ -6,10 +6,11 @@
 
 # BlueJ files
 *.ctxt
-
+*.lst
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+.idea/
+.claude/
 
 # Package Files #
 *.jar
