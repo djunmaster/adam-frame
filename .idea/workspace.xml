@@ -4,28 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08748492-f4e6-4c0b-a117-9cf6d6bd6d3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/adam-dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common-data.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common-redis.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common-web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/adam-common-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/adam-common-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/src/main/java/com/pilot/entity/param/user/UserDeleteParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage-api/src/main/java/com/pilot/entity/param/user/UserDeleteParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/AdamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/AdamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="08748492-f4e6-4c0b-a117-9cf6d6bd6d3f" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/AugmentWebviewStateStore.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AugmentWebviewStateStore.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-common/adam-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/common-data-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/common-log-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/common-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/common-redis-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/common-web-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/dependencies-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/manage-api-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/manage-pom.xml.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup-poms/root-pom.xml.backup" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +70,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2psTTZlbDa0r5863giEb83CGCJW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -131,7 +125,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
