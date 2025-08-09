@@ -4,50 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08748492-f4e6-4c0b-a117-9cf6d6bd6d3f" name="Changes" comment="1. 重构pom.xml依赖关系&#10;2. 补充log模块业务实现">
-      <change afterPath="$PROJECT_DIR$/adam-common/adam-common-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adam-common/adam-common-tool/pom.xml" afterDir="false" />
+    <list default="true" id="08748492-f4e6-4c0b-a117-9cf6d6bd6d3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/adam-dependencies/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AugmentWebviewStateStore.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AugmentWebviewStateStore.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-common-data.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-common-redis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-common-web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-common.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/adam-common/adam-common-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/adam-common-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-data/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-log/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-log/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-log/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-redis/src/main/java/com/pilot/SpringContextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/adam-common-redis/src/main/java/com/pilot/util/SpringContextUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-redis/src/main/java/com/pilot/cache/InitCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/adam-common-redis/src/main/java/com/pilot/cache/InitCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-redis/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-redis/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-redis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-common/adam-common-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/adam-common-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adam-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/src/main/java/com/pilot/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage-api/src/main/java/com/pilot/api/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage-api/src/main/java/com/pilot/entity/param/user/UserDeleteParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage-api/src/main/java/com/pilot/entity/param/user/UserDeleteParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/adam-manage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adam-manage/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/AdamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/AdamApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adam-manage/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adam-manage/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,81 +82,71 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-data [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-data [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-data [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-log [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-redis [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-redis [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-web [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-common-web [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-dependencies [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-dependencies [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-frame [-pl,:adam-manage,-am,package...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-frame [clean,install...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-frame [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-frame [clean,package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-frame [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-frame [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-manage [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-manage [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-manage [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.adam-manage-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;找到数据库连接形参&quot;,
-    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AdamApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/program/JavaProject/Java/adam-frame/adam-common/adam-common-tool/src/main/java/com/pilot/exception&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.AdamApplication.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.adam-common [clean,install].executor": "Run",
+    "Maven.adam-common-data [clean,install].executor": "Run",
+    "Maven.adam-common-data [clean].executor": "Run",
+    "Maven.adam-common-data [install].executor": "Run",
+    "Maven.adam-common-log [clean].executor": "Run",
+    "Maven.adam-common-redis [clean,install].executor": "Run",
+    "Maven.adam-common-redis [clean].executor": "Run",
+    "Maven.adam-common-web [clean].executor": "Run",
+    "Maven.adam-common-web [package].executor": "Run",
+    "Maven.adam-dependencies [install].executor": "Run",
+    "Maven.adam-dependencies [package].executor": "Run",
+    "Maven.adam-frame [-pl,:adam-manage,-am,package...].executor": "Run",
+    "Maven.adam-frame [clean,install...].executor": "Run",
+    "Maven.adam-frame [clean,install].executor": "Run",
+    "Maven.adam-frame [clean,package].executor": "Run",
+    "Maven.adam-frame [clean].executor": "Run",
+    "Maven.adam-frame [install].executor": "Run",
+    "Maven.adam-manage [clean,install].executor": "Run",
+    "Maven.adam-manage [clean].executor": "Run",
+    "Maven.adam-manage [package].executor": "Run",
+    "Maven.adam-manage-api [clean].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "找到数据库连接形参",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.AdamApplication.executor": "Run",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/program/JavaProject/Java/adam-frame/.idea",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\program\JavaProject\Java\adam-frame\adam-common\adam-common-tool\src\main\java\com\pilot\exception" />
-      <recent name="D:\program\JavaProject\Java\adam-frame\adam-common\adam-common-tool\src\main\java\com\pilot\tools" />
-      <recent name="D:\program\JavaProject\Java\adam-frame\adam-common\adam-common-tool\src\main\java\com\pilot\tools\lists" />
       <recent name="D:\program\JavaProject\Java\adam-frame\.idea" />
       <recent name="D:\Project\JavaProject\Java\adam-frame\adam-manage\src\main\java\com\pilot\util" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\program\JavaProject\Java\adam-frame\adam-manage\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.pilot.util" />
@@ -203,19 +171,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AdamApplication">
-    <configuration name="AdamApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pilot.AdamApplication" />
-      <module name="adam-manage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pilot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ape-cloud" />
       <method v="2">
@@ -266,7 +221,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AdamApplication" />
-        <item itemvalue="应用程序.AdamApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -279,9 +233,6 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="StructureViewState">
-    <option name="selectedTab" value="逻辑" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="08748492-f4e6-4c0b-a117-9cf6d6bd6d3f" name="Changes" comment="" />
@@ -322,14 +273,7 @@
       <workItem from="1753501216863" duration="2445000" />
       <workItem from="1753533948416" duration="5978000" />
       <workItem from="1753540315348" duration="2204000" />
-      <workItem from="1753542547943" duration="13667000" />
-      <workItem from="1753595405321" duration="805000" />
-      <workItem from="1753699894242" duration="4093000" />
-      <workItem from="1753714427827" duration="40000" />
-      <workItem from="1753715897474" duration="905000" />
-      <workItem from="1753716828855" duration="3384000" />
-      <workItem from="1753968590692" duration="644000" />
-      <workItem from="1753972382730" duration="54000" />
+      <workItem from="1753542547943" duration="6958000" />
     </task>
     <task id="LOCAL-00001" summary="init: 搭建 Adam 框架基础架构&#10;- 创建多模块 Maven 项目结构&#10;- 配置 SpringBoot、MyBatis-Plus 等基础依赖&#10;- 添加用户模块基本实现（增删改查）&#10;- 集成 Druid 数据源和 SQL 拦截器&#10;- 添加全局异常处理和字段自动填充">
       <option name="closed" value="true" />
@@ -379,15 +323,7 @@
       <option name="project" value="LOCAL" />
       <updated>1734268332110</updated>
     </task>
-    <task id="LOCAL-00007" summary="1. 重构pom.xml依赖关系&#10;2. 补充log模块业务实现">
-      <option name="closed" value="true" />
-      <created>1753549641310</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1753549641310</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,29 +370,19 @@
     <MESSAGE value="feat(common): 重构通用组件和数据处理工具&#10;&#10;- 新增 BaseEntity、BaseParam 和 BasePageParam 接口/类&#10;- 添加 BeanConvertUtils 工具类，支持对象和列表转换&#10;- 重构 ResponseResult 和 ResponsePageResult 响应结果类&#10;- 新增 PageView 分页视图类&#10;- 优化用户模块服务层和控制器逻辑" />
     <MESSAGE value="refactor(project): 清理和重构项目结构&#10;&#10;此提交删除了多个不再使用的IDE文件，重命名和更新了一些工具类，添加了对Swagger和Hutool的支持，以优化项目依赖和代码结构。" />
     <MESSAGE value="feat(adam-common-redis): &#10;1. 引入Redis缓存支持并重构项目结构&#10;2. 在项目中新增Redis缓存功能，重构了相关缓存管理逻辑，删除Swagger配置文件，实现了基于Redis的用户缓存管理，提升了性能与可维护性。" />
-    <MESSAGE value="1. 重构pom.xml依赖关系&#10;2. 补充log模块业务实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 重构pom.xml依赖关系&#10;2. 补充log模块业务实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(adam-common-redis): &#10;1. 引入Redis缓存支持并重构项目结构&#10;2. 在项目中新增Redis缓存功能，重构了相关缓存管理逻辑，删除Swagger配置文件，实现了基于Redis的用户缓存管理，提升了性能与可维护性。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/adam-manage/src/main/java/com/pilot/controller/UserController.java</url>
-          <line>59</line>
+          <line>52</line>
           <properties class="com.pilot.controller.UserController" method="userPage">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/adam-manage-api/src/main/java/com/pilot/api/UserApi.java</url>
-          <line>38</line>
-          <properties class="com.pilot.api.UserApi" method="exportUserInfo">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

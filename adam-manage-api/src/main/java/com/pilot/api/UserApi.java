@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.HttpServletResponse;
-
 @ApiModel(value = "用户接口")
 @RequestMapping("/user")
 public interface UserApi {
@@ -33,9 +31,4 @@ public interface UserApi {
     @ApiModelProperty(value = "[3] 分页查询用户列表", notes = "分页查询用户列表")
     @RequestMapping(value = "/page", method = {RequestMethod.POST})
     public ResponseResult<UserVo> userPage(@RequestBody BasePageParam basePageParam);
-
-    @ApiModelProperty(value = "[4] 导出用户信息", notes = "导出用户信息")
-    @RequestMapping(value = "/export/word/info", method = {RequestMethod.POST})
-    public ResponseResult<Void> exportUserInfo(HttpServletResponse response);
-
 }
