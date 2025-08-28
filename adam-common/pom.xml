@@ -18,5 +18,6 @@
         <module>adam-common-data</module>
         <module>adam-common-log</module>
         <module>adam-common-redis</module>
+        <module>adam-util</module>
     </modules>
 </project>
